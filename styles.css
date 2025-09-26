@@ -28,7 +28,6 @@ header {
     height: auto;
     margin-left: 20px; /* Space from left edge */
 }
-
 nav ul {
     list-style: none;
     display: flex;
