@@ -57,14 +57,14 @@ nav a:hover {
     font-size: 1.2em;
     max-width: 700px;
     margin: 0 auto;
-}
-section { opacity: 0; transform: translateY(20px); }
 section {
     padding: 50px 20px;
     max-width: 1000px;
     margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
 .what-we-do {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
