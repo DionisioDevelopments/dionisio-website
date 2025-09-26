@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section); // Animate on scroll
     });
 
-    // Map (Balmy Beach Road)
-    const map = L.map('map').setView([44.620803, -80.943900], 14);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
-    L.marker([44.6346, -80.9337]).addTo(map)
-        .bindPopup('Balmy Beach Road Project<br>10 Premium Lots near Georgian Bay')
-        .openPopup();
+   // Interactive Map
+const map = L.map('map').setView([44.6208, -80.9439], 14);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+L.marker([44.6208, -80.9439]).addTo(map)
+    .bindPopup('Balmy Beach Road Project<br>10 Premium Lots')
+    .openPopup();
 });
