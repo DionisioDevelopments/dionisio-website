@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="Dionisio Developments Inc. - Premium real estate near Georgian Bay.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dionisio Developments Inc. - Premium Real Estate</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
         html { scroll-behavior: smooth; }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.jpeg" alt="Dionisio Developments Logo" style="height: 50px; display: block; margin: 0 auto 10px;">
+        <img src="logo.png" alt="Dionisio Developments Logo" style="height: 50px; display: block; margin: 0 auto 10px;">
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -29,7 +30,7 @@
 
     <section id="home" class="hero">
         <h1>Premium Living. Thoughtful Growth.</h1>
-        <p>Dionisio Developments Inc. is crafting exceptional communities, starting with our premier 10-acre project on Balmy Beach Road near Georgian Bay.</p>
+        <p>Dionisio Developments Inc. is crafting exceptional communities, starting with our premier 10.08-acre project on Balmy Beach Road near Georgian Bay.</p>
     </section>
 
     <section id="what-we-do">
@@ -60,9 +61,10 @@
         <p>Discover our premier development on Balmy Beach Road, setting the standard for future projects.</p>
         <div class="portfolio-grid">
             <div class="project">
-                <img src="balmy-beach.jpg" alt="Balmy Beach Project">
+                <img src="balmy-beach.jpg" alt="Balmy Beach Project"> <!-- Placeholder: https://via.placeholder.com/300x200?text=Balmy+Beach -->
                 <h3>Balmy Beach Road</h3>
-                <p>Ten premium one-acre lots steps from Georgian Chandelier Bay, minutes from Cobble Beach. A blend of luxury and nature, designed for lasting value.</p>
+                <p>Ten premium one-acre lots steps from Georgian Bay, minutes from Cobble Beach. A blend of luxury and nature, designed for lasting value.</p>
+                <div id="map"></div>
             </div>
         </div>
         <div class="cta">
@@ -105,7 +107,7 @@
         </div>
     </section>
 
-    <section id="purpose" class="stats">
+    <section id="purpose">
         <h2>Our Purpose</h2>
         <p>Backed by a vision to create lasting value, we build communities that elevate lifestyles and strengthen local economies.</p>
     </section>
@@ -115,11 +117,10 @@
         <p>Our experienced team is committed to excellence, guiding Dionisio’s growth with expertise and passion.</p>
         <div class="portfolio-grid">
             <div class="project">
-                <img src="team1.jpg" alt="Team Member 1" style="border-radius: 50%;">
-                <h3>[Your Name]</h3>
-                <p>[Co-Founder]</p>
+                <img src="team1.jpg" alt="Darrell Cowen" style="border-radius: 50%; width: 150px; height: 150px; margin: 0 auto;"> <!-- Placeholder: https://via.placeholder.com/150x150?text=D.C. -->
+                <h3>Darrell Cowen</h3>
+                <p>Co-Founder</p>
             </div>
-            <!-- Add more team members as needed -->
         </div>
         <div class="cta">
             <a href="#">Meet the Team</a>
@@ -128,7 +129,7 @@
 
     <footer>
         <h3>Contact Us</h3>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
+        <form action="https://formspree.io/f/your-form-id" method="POST"> <!-- Replace with your Formspree endpoint -->
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
@@ -136,6 +137,8 @@
         </form>
         <p>&copy; 2025 Dionisio Developments Inc. All rights reserved.</p>
     </footer>
-<script src="script.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
