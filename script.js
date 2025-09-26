@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Map (Balmy Beach Road)
-    const map = L.map('map').setView([44.6346, -80.9337], 14);
+    const map = L.map('map').setView([44.620803, -80.943900], 14);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
